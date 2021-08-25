@@ -11,10 +11,10 @@ Currently, only the standard Go libraries are used. To build MABLE, download the
 ### Using Mable
 
 * For help, run `./mable -h` in the terminal.
-* To retrieve the most recent version of the ABL, run `./mable -update`
+* To retrieve the most recent version of the ABL, run `./mable -update` This will create a local file `approved-books-list,json` or overwrite an existing version.
 * To remove a book version from the ABL, run `./mable -remove {collection id} {content version}`
 * To add a book version to the ABL, run `./mable -add {collection id} {content version} {min code version}`
-* These changes are currently made to the local `approved-book-list.json` file. To add the changes to the OpenStax ABL, you must use regular git commands (or just cut and paste it over the old version).
+* These changes are currently made to the local `approved-book-list.json` file. To make the changes to the OpenStax ABL, you must use regular git commands (or just cut and paste it over the old version).
 
 ### To be added
 
