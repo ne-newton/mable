@@ -4,7 +4,9 @@ MABLE is a command line application built with Go to edit the OpenStax Approved 
 
 ### Getting Mable
 
-Currently, only the standard Go libraries are used. To build MABLE, download the repo, make sure you have Go installed, and run `go build` in the project directory. This will create the `mable` binary file. If you are using a mac, the precompiled binary in the repo will work, you don't need to build anything.
+If you are using a mac, the precompiled binary in the repo will work, you don't need to build anything.
+
+Currently, only the standard Go libraries are used. To build MABLE, download the repo, make sure you have Go installed, and run `go build` in the project directory. This will create the `mable` binary file. 
 
 ### Using Mable
 
