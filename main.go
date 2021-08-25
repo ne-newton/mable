@@ -159,7 +159,7 @@ func writeABL(abl ABL) {
 	}
 }
 
-func pushABL(abl ABL) {
+func pushABL() {
 	fmt.Println("this doesn't work yet")
 }
 
@@ -211,7 +211,7 @@ func main() {
 		writeABL(abl)
 	} else if *pushPtr {
 		abl = loadABL()
-		pushABL(abl)
+		pushABL()
 	} else {
 		fmt.Println("MABLE: Making the ABL Easier\nrun \"./mable -h\" for help")
 	}
