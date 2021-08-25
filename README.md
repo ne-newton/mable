@@ -1,4 +1,4 @@
-#MABLE (Making the ABL Easier)
+# MABLE (Making the ABL Easier)
 
 MABLE is a command line application built with Go to edit the OpenStax Approved Book List (ABL)
 
