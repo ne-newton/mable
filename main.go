@@ -105,7 +105,7 @@ func fetchABL() ABL {
 func argsError(args []string) bool {
 	clError := false
 	validColID := regexp.MustCompile(`col\d{5}`)
-	validVersion := regexp.MustCompile(`\d+\.\d+\.\d+`)
+	validVersion := regexp.MustCompile(`\d+\.\d+\.?\d*`)
 	validMinCode := regexp.MustCompile(`\d{8}\.\d{6}`)
 	if !validColID.MatchString(args[0]) {
 		clError = true
