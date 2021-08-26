@@ -185,6 +185,11 @@ func main() {
 		false,
 		"push local version of approved-book-list.json to github: \"./mable -push\"",
 	)
+	countPtr := flag.Bool(
+		"count",
+		false,
+		"count total book versions on ABL: \"./mable -count\"",
+	)
 	flag.Parse()
 	args := flag.Args()
 	if *removePtr {
@@ -205,6 +210,9 @@ func main() {
 			abl.addBookVersion(args[0], args[1], args[2])
 			writeABL(abl)
 		}
+	} else if *countPtr {
+		abl = loadABL()
+		fmt.Printf("ABL contains %d book versions", len(abl.ApprovedVersions))
 	} else if *updatePtr {
 		abl = fetchABL()
 		fmt.Println("most recent version of approved-book-list.json has been downloaded")
