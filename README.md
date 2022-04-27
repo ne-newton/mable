@@ -1,6 +1,6 @@
 # MABLE (Making the ABL Easier)
 
-(currently being updated, and not functioning, most recent working sha is: 732bf63259b7214e0cf7baa0d481c698bf7a428b)
+(currently being updated, and not functioning, most recent working sha is: `732bf63259b7214e0cf7baa0d481c698bf7a428b`)
 
 MABLE is a command line application built with Go to edit the OpenStax Approved Book List (ABL)
 
